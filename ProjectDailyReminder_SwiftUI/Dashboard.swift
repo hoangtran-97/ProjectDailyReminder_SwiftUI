@@ -16,7 +16,7 @@ struct Dashboard: View {
                     .fill(Color.gray)
                     .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 80)
                     .cornerRadius(10)
-                HStack(){
+                HStack{
                     ZStack{
                         Rectangle()
                             .fill(Color.green)
@@ -29,15 +29,33 @@ struct Dashboard: View {
                     }
                     Spacer()
                     HStack{
-                        Text("Reminder Item")
-                        Text("-")
-                        Text("DateTime")
+                        VStack(alignment: .leading){
+                            HStack{
+                                Text("Reminder 0")
+                                Text("-")
+                                Text("Time")
+                            }
+                            .padding(5)
+                            HStack(spacing: 30){
+                                Text("M")
+                                    .frame(width: 30, height: 30)
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 50)
+                                            .stroke(Color.green, lineWidth: 5)
+                                )
+                                Text("T")
+                                Text("W")
+                                Text("T")
+                                Text("F")
+                                Text("S")
+                                Text("S")
+                                 .foregroundColor(.red)
+                            }
+                        }
+                        
                     }
                     Spacer()
                 }
-                
-                
-                
             }
             .padding(.horizontal)
         }

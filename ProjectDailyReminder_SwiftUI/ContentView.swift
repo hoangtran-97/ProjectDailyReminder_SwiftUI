@@ -16,7 +16,7 @@ struct ContentView: View {
                 .tabItem {
                     Image(systemName: "list.bullet")
             }.tag(0)
-            Text("Second View")
+            Test()
                 .tabItem {
                     Image(systemName: "checkmark.circle")
             }.tag(1)
