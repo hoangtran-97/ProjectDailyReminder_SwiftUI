@@ -10,7 +10,15 @@ import SwiftUI
 
 struct Setting: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            Image(systemName: "moon")
+                .resizable()
+                .frame(width: 50, height: 50)
+                .foregroundColor(Color.red)
+                .navigationBarTitle(Text("Dark mode test"), displayMode: .large)
+                .navigationBarHidden(false)
+        }
+       
     }
 }
 

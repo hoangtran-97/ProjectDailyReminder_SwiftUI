@@ -14,6 +14,7 @@
 		4FC2FFCB23617A0A00026945 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FC2FFCA23617A0A00026945 /* Preview Assets.xcassets */; };
 		4FC2FFCE23617A0A00026945 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FC2FFCC23617A0A00026945 /* LaunchScreen.storyboard */; };
 		4FC2FFD6236189AB00026945 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC2FFD5236189AB00026945 /* Setting.swift */; };
+		4FC2FFDA236194A200026945 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC2FFD9236194A200026945 /* Dashboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4FC2FFCD23617A0A00026945 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4FC2FFCF23617A0A00026945 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FC2FFD5236189AB00026945 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		4FC2FFD9236194A200026945 /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +60,10 @@
 		4FC2FFC023617A0900026945 /* ProjectDailyReminder_SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				4FC2FFD823618C4E00026945 /* Views */,
 				4FC2FFC123617A0900026945 /* AppDelegate.swift */,
 				4FC2FFC323617A0900026945 /* SceneDelegate.swift */,
 				4FC2FFC523617A0900026945 /* ContentView.swift */,
-				4FC2FFD5236189AB00026945 /* Setting.swift */,
 				4FC2FFC723617A0A00026945 /* Assets.xcassets */,
 				4FC2FFCC23617A0A00026945 /* LaunchScreen.storyboard */,
 				4FC2FFCF23617A0A00026945 /* Info.plist */,
@@ -76,6 +78,15 @@
 				4FC2FFCA23617A0A00026945 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4FC2FFD823618C4E00026945 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4FC2FFD5236189AB00026945 /* Setting.swift */,
+				4FC2FFD9236194A200026945 /* Dashboard.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +162,7 @@
 			files = (
 				4FC2FFC223617A0900026945 /* AppDelegate.swift in Sources */,
 				4FC2FFC423617A0900026945 /* SceneDelegate.swift in Sources */,
+				4FC2FFDA236194A200026945 /* Dashboard.swift in Sources */,
 				4FC2FFD6236189AB00026945 /* Setting.swift in Sources */,
 				4FC2FFC623617A0900026945 /* ContentView.swift in Sources */,
 			);
