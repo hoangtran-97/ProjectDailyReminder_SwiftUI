@@ -9,6 +9,30 @@
 import SwiftUI
 
 struct Dashboard: View {
+    @State private var reminderData = [[
+                            "title": "Reminder 0",
+                            "time": "150",
+                            "mon": true,
+                            "tue": true,
+                            "wed": true,
+                            "thu": true,
+                            "fri": true,
+                            "sat": false,
+                            "sun": false,
+                            "done": true,
+                        ],
+                        [
+                            "title": "Reminder 1",
+                            "time": "15",
+                            "mon": true,
+                            "tue": false,
+                            "wed": true,
+                            "thu": false,
+                            "fri": true,
+                            "sat": false,
+                            "sun": true,
+                            "done": false,
+                            ]]
     var body: some View {
         NavigationView{
             ZStack{
