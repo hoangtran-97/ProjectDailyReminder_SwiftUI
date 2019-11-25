@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F87DB34238BDCC9007D4381 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F87DB33238BDCC9007D4381 /* Reminder.swift */; };
 		4FC2FFC223617A0900026945 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC2FFC123617A0900026945 /* AppDelegate.swift */; };
 		4FC2FFC423617A0900026945 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC2FFC323617A0900026945 /* SceneDelegate.swift */; };
 		4FC2FFC623617A0900026945 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC2FFC523617A0900026945 /* ContentView.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F87DB33238BDCC9007D4381 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 		4FC2FFBE23617A0900026945 /* ProjectDailyReminder_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectDailyReminder_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FC2FFC123617A0900026945 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FC2FFC323617A0900026945 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			children = (
 				4FC2FFD823618C4E00026945 /* Views */,
 				4FC2FFC123617A0900026945 /* AppDelegate.swift */,
+				4F87DB33238BDCC9007D4381 /* Reminder.swift */,
 				4FC2FFC323617A0900026945 /* SceneDelegate.swift */,
 				4FC2FFC523617A0900026945 /* ContentView.swift */,
 				4FC2FFC723617A0A00026945 /* Assets.xcassets */,
@@ -163,6 +166,7 @@
 				4FC2FFC223617A0900026945 /* AppDelegate.swift in Sources */,
 				4FC2FFC423617A0900026945 /* SceneDelegate.swift in Sources */,
 				4FC2FFDA236194A200026945 /* Dashboard.swift in Sources */,
+				4F87DB34238BDCC9007D4381 /* Reminder.swift in Sources */,
 				4FC2FFD6236189AB00026945 /* Setting.swift in Sources */,
 				4FC2FFC623617A0900026945 /* ContentView.swift in Sources */,
 			);
