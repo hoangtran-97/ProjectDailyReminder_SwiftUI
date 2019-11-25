@@ -9,42 +9,19 @@
 import SwiftUI
 
 struct Dashboard: View {
-    @State private var reminderData = [[
-                            "title": "Reminder 0",
-                            "time": "150",
-                            "mon": true,
-                            "tue": true,
-                            "wed": true,
-                            "thu": true,
-                            "fri": true,
-                            "sat": false,
-                            "sun": false,
-                            "done": true,
-                        ],
-                        [
-                            "title": "Reminder 1",
-                            "time": "15",
-                            "mon": true,
-                            "tue": false,
-                            "wed": true,
-                            "thu": false,
-                            "fri": true,
-                            "sat": false,
-                            "sun": true,
-                            "done": false,
-                            ]]
+    @State private var reminderData = [
+        "Go home",
+        "Do homework",
+        "Do something"
+    ]
     var body: some View {
         NavigationView{
-            ZStack{
-                Rectangle()
-                    .fill(Color.gray)
-                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 80)
-                    .cornerRadius(10)
+            List{
                 HStack{
                     ZStack{
                         Rectangle()
                             .fill(Color.green)
-                            .frame(minWidth: 0, maxWidth: 80, minHeight: 0, maxHeight: 80)
+                            .frame(width: 80, height: 80)
                             .cornerRadius(10)
                         Image(systemName: "plus")
                             .resizable()
@@ -60,7 +37,7 @@ struct Dashboard: View {
                                 Text("Time")
                             }
                             .padding(5)
-                            HStack(spacing: 30){
+                            HStack(spacing: 20){
                                 Text("M")
                                     .frame(width: 30, height: 30)
                                     .overlay(
@@ -73,15 +50,18 @@ struct Dashboard: View {
                                 Text("F")
                                 Text("S")
                                 Text("S")
-                                 .foregroundColor(.red)
+                                    .foregroundColor(.red)
                             }
                         }
                         
                     }
                     Spacer()
                 }
+                .padding(.trailing, 10)
+                .background(Color.gray)
+                .cornerRadius(10)
+                
             }
-            .padding(.horizontal)
         }
     }
 }

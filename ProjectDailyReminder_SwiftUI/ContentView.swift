@@ -16,7 +16,7 @@ struct ContentView: View {
                 .tabItem {
                     Image(systemName: "list.bullet")
             }.tag(0)
-            Test()
+            Setting()
                 .tabItem {
                     Image(systemName: "checkmark.circle")
             }.tag(1)
